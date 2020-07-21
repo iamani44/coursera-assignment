@@ -1,0 +1,58 @@
+body
+{
+	background-color: lightgray;
+}
+.Name
+{
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	font-size: 200%;
+	margin-bottom: 50px;
+
+}
+.Description
+{
+    width: 50%;
+	text-align: center;
+	margin-left: 350px;
+	font-size: 1.2em;
+	padding: 5px;
+	font-weight: bold;
+	margin-bottom: 10px;
+
+}
+#king
+{
+	margin-top: 50px;
+	margin-left: 60px;
+	
+
+	width: 150px;
+	height: 200px;
+}
+#table{
+	border: 3px solid black;
+	height: 100px; 
+
+}
+table,td,th
+{
+	padding: 5px;
+	background-color: lightpink;
+	margin-top: 30px;
+	margin-left: 600px;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	border: 5px solid black;
+}
+
+.foot
+{
+	margin-top: 15px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.3em;
+
+}
