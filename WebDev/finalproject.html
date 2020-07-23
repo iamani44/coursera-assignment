@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.head
+{
+	color: darkblue;
+	text-align: center;
+	font-size: 2em;
+}
+.b
+{
+	background-color: lightgrey;
+
+}
+.head2
+{
+	margin-left:30px;
+	font-size: 1.3em;
+}
+.form1
+{
+	
+	text-align: left;
+}
+.t1
+{
+	margin-left:30px;
+}
+#desc
+{
+	font-family: sans-serif;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 50px;
+}
+.tr
+{
+
+	font-size: 0.8em;
+	font-family: sans-serif;
+	margin-bottom: 15px;
+	font-weight: bold;
+	}
+	#image
+	{
+		height: 300px;
+		width: 400px;
+		float: right;
+		margin-right: 100px;
+	}
+
+	.button
+	{
+		font-weight: bold;
+		margin-top: 20px;
+		margin-left: 70px;
+	}
+	</style>
+	<script type="text/javascript">
+		function message()  //function1
+		//JavaScript Alert on submitting the form
+		{ 
+			alert("Yes! The form has been successfully submitted!");
+		}
+		function checknum() //function2, to check whether entered number is valid or not.
+		{ 
+			var num=document.getElementById('number').value; 
+			if (num.length==10)
+			 {
+			 	document.getElementById('remark').innerHTML=" Valid number";
+
+			 }
+			 else 
+			 {
+			 	alert("Invalid! Enter a 10 digit number please!");
+			 }
+		}
+		
+	</script>
+
+	<title>Customer information</title>
+</head>
+<body class="b">
+
+	<h1 class="head">Welcome to EComm!</h1> <!--CSS Styling is used-->
+
+	<div id="desc"> <!--Description of contents-->
+		Hi, welcome to my final project! I have chosen a form to <strong>REGISTER FOR AN E-COMMERCE WEBSITE!</strong><br>
+		I will be gathering general user information for registration purposes.<br>
+		Please not this is <strong>ONLY CLIENT SIDE</strong> webpage, and does not include any server for storing any entered data.<br>
+		All types of javascript functions, HTML and CSS styling required, have been used in the page.
+	</div>
+	<img id="image" src="https://miro.medium.com/max/1018/1*eUFJ5BNpw3xSZxK3BhVHxw.jpeg" > <!--Image tag applied-->
+	<h1 class="head2">Please enter your information below!</h1>
+	<form class="form1">
+			
+		<table class="t1"   border="0"> <!--forms used inside table-->
+			<tr class="tr">
+				<td>First Name:</td>
+				<td><input type="text" id="fname" name="FirstName"></td>
+			</tr>
+			<tr class="tr">
+				<td>Last Name:</td>
+				<td><input type="text" id="lname" name="LastName"></td>
+			</tr>
+			<tr class="tr">
+				<td>Email:</td>
+				<td><input type="text" id="email" name="Email"></td>
+			</tr>
+			<tr class="tr">
+				<td>Password:</td>
+				<td><input type="password" id="pass1" name="password"></td>
+			</tr>
+			<tr class="tr">
+				<td>Phone Number:</td>
+				<td><input type="text" id="number" name="number" onblur="checknum();"><span id="remark" onblur="checknum();"></span></td> <!--Calls the javascript function to check number entered-->
+			</tr>
+		
+		
+			
+			<tr class="tr">
+				<td>City:</td>
+				<td><input type="text" id="city" name="City"></td>
+			</tr>
+			<tr class="tr">
+				<td>Gender:</td>
+				<td>Male<input type="radio" id="gender" name="gender" checked> Female<input type="radio" id="gender" name="gender">Other<input type="radio" id="gender" name="gender"></td> <!--Radio button lets select one gender-->
+
+				
+			</tr>
+			<tr class="tr">
+				<td>Birthday:</td>
+				<td><input type="date" name="date"></td> <!--another type of input-->
+			</tr>
+			
+				
+			
+		</table>
+
+		
+	
+</form>
+<button class="button" type="button"  onclick="message();">Click Here!</button> <!--Calls another function message -->
+</body>
+</html>
